@@ -2,21 +2,14 @@
 
 const{Router} =require('express')
 const router = Router()
+const {
+    rootMessage, 
+    hiMessage,
+    byeMessage
+} = require('../controllers/messages')
 
-router.get('/', (req, res) => {
-    res.send('Mensajes')
-   }) //End point 
-
-   router.get('/hi', (req, res) => {
-    res.send('Hola mundo')
-   }) //End point 
-
-   router.get('/', (req, res) => {
-    res.send('Hola mundo')
-   }) //End point 
-
-   router.get('/bye', (req, res) => {
-    res.send('Adiós mundo')
-   }) //End point 
+router.get('/',rootMessage)// End point
+router.get('/hi',hiMessage)
+router.get('/bye',byeMessage)
 
    module.exports = router 
