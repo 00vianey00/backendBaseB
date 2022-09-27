@@ -5,11 +5,18 @@ const router = Router()
 const {
     rootMessage, 
     hiMessage,
-    byeMessage
+    byeMessage,
+    postMessage,
+    putMessage,
+    deleteMessage
 } = require('../controllers/messages')
 
 router.get('/',rootMessage)// End point
 router.get('/hi',hiMessage)
 router.get('/bye',byeMessage)
+
+router.post('/', postMessage)//crear o añadir
+router.put('/', putMessage)//actualizar registro
+router.delate('/', deleteMessage)//eliminar registro
 
    module.exports = router 
