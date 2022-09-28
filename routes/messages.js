@@ -17,6 +17,6 @@ router.get('/bye',byeMessage)
 
 router.post('/', postMessage)//crear o añadir
 router.put('/', putMessage)//actualizar registro
-router.delate('/', deleteMessage)//eliminar registro
+router.delete('/', deleteMessage)//eliminar registro
 
    module.exports = router 
