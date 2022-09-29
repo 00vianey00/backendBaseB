@@ -13,7 +13,7 @@ class server {
         this.routes()
     }
 
-    routes() {
+    routes() { 
 
         //this.app.get('/', (req, res) => {
             //res.send('Hola mundo')
